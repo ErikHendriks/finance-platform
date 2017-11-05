@@ -1,0 +1,7 @@
+CREATE TABLE users('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'username' TEXT NOT NULL, 'hash' TEXT NOT NULL, 'cash' varchar(10) DEFAULT 10000);
+
+CREATE TABLE 'portfolio' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'name' varchar(40) NOT NULL, symbol varchar(10), amount varchar(10), price varchar(10), total varchar(10));
+
+CREATE TABLE 'buy' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'name' varchar(40) NOT NULL, price NUMERIC NOT NULL, symbol varchar(10), amount varchar(10), hist DATETIME);
+
+CREATE TABLE 'sell' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'name' varchar(40) NOT NULL, price NUMERIC NOT NULL, symbol varchar(10), amount varchar(10), hist DATETIME);
